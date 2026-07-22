@@ -9,6 +9,7 @@ export function whatsappUrl(message?: string) {
 export const NAV_LINKS = [
   { label: "About", href: "/about" },
   { label: "Crops", href: "/crops" },
+  { label: "FAQ", href: "/#faq" },
   { label: "Contact", href: "/contact" },
 ] as const;
 

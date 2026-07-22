@@ -1,6 +1,7 @@
 import { About } from "@/components/sections/About";
 import { Awards } from "@/components/sections/Awards";
 import { Crops } from "@/components/sections/Crops";
+import { FAQ } from "@/components/sections/FAQ";
 import { FinalCta } from "@/components/sections/FinalCta";
 import { Hero } from "@/components/sections/Hero";
 import { Process } from "@/components/sections/Process";
@@ -19,6 +20,7 @@ export default function Home() {
       <Roadmap />
       <Awards />
       <WhyUs />
+      <FAQ />
       <FinalCta />
     </main>
   );
