@@ -1,4 +1,5 @@
-import { Check, Flame, Leaf, Sparkles } from "lucide-react";
+import { ArrowRight, Check, Flame, Leaf, Sparkles } from "lucide-react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
 import { Section } from "@/components/ui/Section";
@@ -45,6 +46,16 @@ export function Crops() {
           heading="Two core crops, grown with intent"
           subheading="Every harvest is grown with quality, traceability, and export-readiness in mind — not as an afterthought."
         />
+        <Link
+          href="/crops"
+          className="group mt-4 inline-flex w-fit items-center gap-2 text-body-sm font-medium text-primary-700"
+        >
+          See full crop profiles
+          <ArrowRight
+            size={16}
+            className="transition-transform duration-200 group-hover:translate-x-1"
+          />
+        </Link>
       </ScrollReveal>
 
       <div className="mt-12 grid gap-6 lg:grid-cols-3">

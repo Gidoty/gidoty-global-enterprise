@@ -1,4 +1,5 @@
 export const WHATSAPP_NUMBER = "2347034357206";
+export const WHATSAPP_DISPLAY = "+234 703 435 7206";
 
 export function whatsappUrl(message?: string) {
   const base = `https://wa.me/${WHATSAPP_NUMBER}`;
@@ -6,11 +7,9 @@ export function whatsappUrl(message?: string) {
 }
 
 export const NAV_LINKS = [
-  { label: "About", href: "#about" },
-  { label: "Crops", href: "#crops" },
-  { label: "Roadmap", href: "#roadmap" },
-  { label: "Awards", href: "#awards" },
-  { label: "Contact", href: "#contact" },
+  { label: "About", href: "/about" },
+  { label: "Crops", href: "/crops" },
+  { label: "Contact", href: "/contact" },
 ] as const;
 
 export const COMPANY = {

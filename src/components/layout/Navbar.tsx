@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { NAV_LINKS, whatsappUrl } from "@/lib/constants";
@@ -35,22 +36,22 @@ export function Navbar() {
     >
       <Container>
         <nav className="flex h-20 items-center justify-between">
-          <a
-            href="#top"
+          <Link
+            href="/"
             className="font-display text-lg font-semibold tracking-tight text-primary-800 sm:text-xl"
           >
             Gidoty Global Enterprise
-          </a>
+          </Link>
 
           <div className="hidden items-center gap-10 lg:flex">
             {NAV_LINKS.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-body-sm font-medium text-charcoal-700 transition-colors hover:text-primary-700"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -84,14 +85,14 @@ export function Navbar() {
             <Container>
               <div className="flex flex-col gap-1 py-4">
                 {NAV_LINKS.map((link) => (
-                  <a
+                  <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className="rounded-lg px-3 py-3 text-base font-medium text-charcoal-800 hover:bg-primary-50"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 ))}
                 <Button
                   href={whatsappUrl("Hello, I'd like to know more about Gidoty Global Enterprise.")}

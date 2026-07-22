@@ -1,4 +1,5 @@
-import { Award, Leaf, MapPin, Sprout } from "lucide-react";
+import { ArrowRight, Award, Leaf, MapPin, Sprout } from "lucide-react";
+import Link from "next/link";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -41,6 +42,16 @@ export function About() {
               The remaining land sits on a clearly staged expansion roadmap
               as we scale production and diversify into new crops.
             </p>
+            <Link
+              href="/about"
+              className="group inline-flex w-fit items-center gap-2 text-body-sm font-medium text-primary-700"
+            >
+              Read our full story
+              <ArrowRight
+                size={16}
+                className="transition-transform duration-200 group-hover:translate-x-1"
+              />
+            </Link>
           </div>
         </ScrollReveal>
 

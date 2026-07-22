@@ -1,4 +1,5 @@
 import { Award, MapPin, MessageCircle } from "lucide-react";
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { COMPANY, NAV_LINKS, whatsappUrl } from "@/lib/constants";
 
@@ -33,12 +34,12 @@ export function Footer() {
             <ul className="flex flex-col gap-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-body-sm text-cream-100/80 transition-colors hover:text-cream-100"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

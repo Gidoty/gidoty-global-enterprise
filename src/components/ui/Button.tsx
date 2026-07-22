@@ -9,7 +9,7 @@ const baseStyles =
   "inline-flex items-center justify-center gap-2 rounded-full font-sans font-medium transition-colors duration-200 disabled:pointer-events-none disabled:opacity-50";
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary: "bg-accent-400 text-cream-100 hover:bg-accent-500 active:bg-accent-600",
+  primary: "bg-accent-600 text-cream-100 hover:bg-accent-700 active:bg-accent-800",
   secondary:
     "bg-primary-700 text-cream-100 hover:bg-primary-800 active:bg-primary-900",
   ghost:
