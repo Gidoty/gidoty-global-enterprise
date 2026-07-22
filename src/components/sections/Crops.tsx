@@ -24,8 +24,8 @@ const crops = [
   {
     icon: Leaf,
     badge: "Core crop",
-    badgeVariant: "primary" as const,
-    iconWrap: "bg-primary-50 text-primary-700",
+    badgeVariant: "gold" as const,
+    iconWrap: "bg-gold-50 text-gold-700",
     title: "Plantain Cultivation",
     description:
       "Full-cycle plantain production grown for reliable yield and market-ready quality, harvest after harvest.",

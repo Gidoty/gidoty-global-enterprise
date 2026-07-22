@@ -9,7 +9,7 @@ interface CropProfileProps {
   icon: LucideIcon;
   iconWrap: string;
   badge: string;
-  badgeVariant: "primary" | "accent" | "neutral";
+  badgeVariant: "primary" | "accent" | "gold" | "neutral";
   title: string;
   description: string;
   points: string[];
@@ -17,6 +17,7 @@ interface CropProfileProps {
   panelItems: { label: string; value: string }[];
   panelWrap: string;
   reverse?: boolean;
+  illustration?: React.ReactNode;
 }
 
 export function CropProfile({
@@ -32,6 +33,7 @@ export function CropProfile({
   panelItems,
   panelWrap,
   reverse = false,
+  illustration,
 }: CropProfileProps) {
   return (
     <Section id={id} background="cream">
@@ -61,6 +63,9 @@ export function CropProfile({
 
         <ScrollReveal delay={0.15} className={reverse ? "lg:order-1" : ""}>
           <div className={`rounded-3xl p-8 sm:p-10 ${panelWrap}`}>
+            {illustration ? (
+              <div className="mb-8 flex justify-center">{illustration}</div>
+            ) : null}
             <p className="mb-8 text-xs font-sans uppercase tracking-[0.14em] opacity-60">
               {panelTitle}
             </p>

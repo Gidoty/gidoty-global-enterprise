@@ -5,6 +5,8 @@ import { FinalCta } from "@/components/sections/FinalCta";
 import { PageHero } from "@/components/sections/PageHero";
 import { Badge } from "@/components/ui/Badge";
 import { Section } from "@/components/ui/Section";
+import { PepperPlant } from "@/components/illustrations/PepperPlant";
+import { PlantainTree } from "@/components/illustrations/PlantainTree";
 
 export const metadata: Metadata = {
   title: "Our crops",
@@ -42,14 +44,15 @@ export default function CropsPage() {
           { label: "Market focus", value: "Domestic & export-ready" },
         ]}
         panelWrap="bg-accent-50 text-charcoal-900"
+        illustration={<PepperPlant className="h-56 w-40" />}
       />
 
       <CropProfile
         id="plantain"
         icon={Leaf}
-        iconWrap="bg-primary-50 text-primary-700"
+        iconWrap="bg-gold-50 text-gold-700"
         badge="Core crop"
-        badgeVariant="primary"
+        badgeVariant="gold"
         title="Plantain Cultivation"
         description="Alongside pepper, we run full-cycle plantain cultivation — from planting through to harvest — built for reliable yield and market-ready quality on every cycle."
         points={[
@@ -64,7 +67,8 @@ export default function CropsPage() {
           { label: "Market focus", value: "Domestic & regional" },
           { label: "Status", value: "Active cultivation" },
         ]}
-        panelWrap="bg-primary-800 text-cream-100"
+        panelWrap="bg-gold-500 text-charcoal-900"
+        illustration={<PlantainTree className="h-64 w-48" />}
         reverse
       />
 

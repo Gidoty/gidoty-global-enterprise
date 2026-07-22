@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-type BadgeVariant = "primary" | "accent" | "neutral";
+type BadgeVariant = "primary" | "accent" | "gold" | "neutral";
 
 interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
   variant?: BadgeVariant;
@@ -9,6 +9,7 @@ interface BadgeProps extends React.HTMLAttributes<HTMLSpanElement> {
 const variantStyles: Record<BadgeVariant, string> = {
   primary: "bg-primary-50 text-primary-700",
   accent: "bg-accent-50 text-accent-700",
+  gold: "bg-gold-50 text-gold-800",
   neutral: "bg-charcoal-50 text-charcoal-700",
 };
 
